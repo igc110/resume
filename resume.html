@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈芦夫的简历</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #2E8B57;
+            margin-bottom: 10px;
+        }
+        .contact {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact span {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+        h2 {
+            color: #2E8B57;
+            border-bottom: 2px solid #2E8B57;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .project {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>陈芦夫的简历</h1>
+        <div class="contact">
+            <span>📞 19902099261</span>
+            <span>✉️ igc1@qq.com</span>
+        </div>
+
+        <div class="section">
+            <h2>教育背景</h2>
+            <p>安徽大学（211、双一流建设高校）</p>
+            <p>英语专业信息技术方向</p>
+        </div>
+
+        <div class="section">
+            <h2>项目经历</h2>
+
+            <div class="project">
+                <h3>项目1：异构大语言模型私有化部署与高效微调（PEFT）</h3>
+                <ul>
+                    <li>构建基于本地算力资源的异构大语言模型（LLM）私有化部署与服务化架构，实现开源基础模型（如 Llama / Qwen 系列）的离线隔离运行，确保核心业务数据与隐私链路零外泄。</li>
+                    <li>设计端到端的数据飞轮与指令微调（SFT）链路，采用低秩自适应（LoRA/QLoRA）及参数高效微调（PEFT）技术，结合特定垂直领域的高质量语料进行定制化训练，大幅降低梯度更新的显存开销。</li>
+                    <li>引入混合精度量化体系（GGUF/AWQ）与 vLLM 高性能推理引擎进行算子级加速，结合 PagedAttention 机制优化 KV Cache 显存占用，将单卡吞吐量与首字响应延迟（TTFT）优化至工业级部署可用标准。</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>项目2：住宿业态单店经济模型（UE）与流程工程化研究</h3>
+                <ul>
+                    <li>基于第一性原理，构建线下规模化住宿业态（华住、亚朵等）的单店经济模型（Unit Economics, UE）底座，深度量化拆解资本开支（CAPEX）、日常运营成本（OPEX）及投资回报周期等核心财务杠杆。</li>
+                    <li>实施标准作业程序（SOP）的颗粒度拆解与重构，分析其在跨周期网络扩张中，如何通过流程工程化压降边际交付成本，并对冲服务质量衰减风险，实现规模经济效益。</li>
+                    <li>提炼并建立基于 RevPAR、OCC 与 ADR 的动态收益管理矩阵，输出针对非标下沉资产（如单体民宿、区域零售实体）的数字化改造与坪效/人效双升战略优化方案。</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>项目3：跨周期个人资产管理(AUM 10万元，区间绝对收益 52%)</h3>
+                <ul>
+                    <li>构建并主动管理跨周期个人资产配置组合，深度贯彻价值投资底色与逆向投资逻辑。在 2026.01 至 2026.05 期间，实现 52% 的超额绝对 Alpha 收益。</li>
+                    <li>应用自由现金流折现（DCF）模型与杜邦分析法对底层资产进行绝对估值定价；结合企业护城河定性分析及财报深度穿透，筛选具备长效 ROE 增长潜力的优质科技与零售标的。</li>
+                    <li>建立系统性杠杆资产风控模型，实现长期资本配置的收益回撤比（Calmar Ratio）最优化。</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>项目4：Dextra 自主化智能体（Autonomous Agent）核心架构开发</h3>
+                <ul>
+                    <li>独立主导 Dextra 智能体的全栈架构设计与产品交付，基于 Python 后端与 Next.js/React 前端栈，实现端到端闭环。</li>
+                    <li>设计高可用、低延迟的流式前端交互视图，将复杂任务拆解与多模态模型能力转化为用户友好现代化生产力工作台。</li>
+                    <li>完成系统架构从 0 到 1 搭建，成功实现复杂工作流的自动化闭环，并将核心 Agent 链路集成至微信、飞书等 IM 生态，实现 AI 在真实业务中的无缝嵌入。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>职业技能</h2>
+            <ul>
+                <li><strong>商业与认知能力：</strong>具备敏锐的商业嗅觉与直觉，深刻理解“第一性原理”与企业内在价值。对现代商业模式及优秀企业文化（尤其是科技生态、线下住宿与零售实体）有深度洞察，能够将技术架构设计与最终的商业价值产出紧密对齐。</li>
+                <li><strong>语言与综合素养：</strong>英语专业背景，具备极强的英文技术文档阅读与跨文化商业资讯处理能力，拥有极强的自我驱动力与独立研究解决复杂问题的能力。</li>
+                <li><strong>AI 与 Agent 架构：</strong>熟悉 ReAct、Plan-and-Execute 等设计范式；具备 MCP Tools & Skills 开发与集成能力；熟练掌握主流大模型 API 调用、Prompt Engineering 及本地化部署微调；具备 RAG 落地经验及向量数据库应用能力；熟练掌握 Agent 工作流的搭建。</li>
+                <li><strong>部署与运维：</strong>熟悉 Linux 系统与 Shell 脚本；熟练掌握 Docker 容器化与 Kubernetes 编排技术、Nginx 反向代理与基础性能调优。</li>
+                <li><strong>企业级生态集成与全渠道触达：</strong>精通主流即时通讯 (IM) 与协同办公生态（如飞书、微信/企业微信）的底层对接机制与 API 规范。熟练基于 Webhook、OAuth 鉴权与事件驱动架构构建安全双向通信链路。</li>
+                <li><strong>前端工程化与大模型交互范式：</strong>精通 TypeScript 生态，熟练运用 React / Next.js 构建高性能响应式 Web 应用；具备组件化开发思维与前端状态管理能力；深刻理解大模型时代的流式交互体验（Streaming UX），实现低延迟数据管道与多模态交互可视化；具备产品直觉与商业转化能力。</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html
